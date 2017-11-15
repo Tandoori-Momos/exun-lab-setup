@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,100,200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/style.css">
+
+    
+       	
+    <title>Lab Setup</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="main-up">
+        <div class="lol">LAB SETUP </div>
+        <div class="nav">
+          <span id = "b1">Home</span> <span id = "b2">About</span> <span id = "b3">pRODUCT</span> <span id = "b4" style = "word-spacing: 0px;">contact </span>
+        </div>  
+
+        <div class="tp">
+
+          <div class="heading">
+           Exun Lab Setup Team 2k17
+          </div> 
+       <br>
+          <div class="buttons">
+          <button id = "a">Register <span class = "haha"></span></button>&nbsp&nbsp&nbsp&nbsp&nbsp
+          <button id = "b">view team<span class = "haha"></span></button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="m2">
+        <div class="text-pos">
+          <div class="h2">A Special Team. We Help Organise Labs.</div><br>
+          <div class = "p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab itaque nam, modi eos? Dolorum quae tenetur, itaque nisi asperiores quo, sapiente sequi dolorem explicabo nesciunt.</div>
+          <div class = "lm"><span class = "lo">------------------------------------------------------------------------------------------------------</span>&nbsp &nbsp Learn More</div>
+        </div>
+        <img src="http://www.lnexun.com/wp-content/uploads/2017/11/Exun2017Infoyage.jpg" alt="">
+      </div>
+      </div>
+      <div class="m3">
+        <div class="text-pos">
+          <div class="h3">Led by Dr. Aaryak, C.E.O. Brazzers. </div><br>
+          <div class = "p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab itaque nam, modi eos? Dolorum quae tenetur, itaque nisi asperiores quo, sapiente sequi dolorem explicabo nesciunt.</div>
+          <div class = "lm2"><span class = "lo">------------------------------------------------------------------------------------------------------</span>&nbsp &nbsp Learn More</div>
+        </div>
+        <img src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-0/p206x206/267748_485753498123019_1040454190_n.jpg?oh=13356a753eab255cdc3a52b95ed0cf96&oe=5A958390" alt="">
+      </div>
+      <div class="lolkiks">
+<div class="text-pos">
+          <div class="h2">Innovation. The Best Lab Setup Team.</div><br>
+          <div class = "p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab itaque nam, modi eos? Dolorum quae tenetur, itaque nisi asperiores quo, sapiente sequi dolorem explicabo nesciunt.</div>
+          <div class = "lm"><span class = "lo">------------------------------------------------------------------------------------------------------</span>&nbsp &nbsp Learn More</div>
+        </div>
+        <img src="https://www.gretapowell.com/wp-content/themes/customtheme-woo/img/logo-creativesuite.png" alt="">
+      </div>
+        
+      </div>
+      <div class="the">
+        <div class="daba">
+          <div class="heading3">Get Notified Of New Updates</div>
+          <div class="sub3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nemo<br> nobis ab eius tempore! </div>
+          <input type="text" placeholder = "Email Address">
+        </div>
+      </div>
+    </div>
+ 
+  </body>
+</html>
+  <script>  
+      
+      var bt = document.getElementsByTagName('button')[0];
+      var bt2 = document.getElementsByTagName('button')[1];
+        var bt3 = document.getElementsByTagName('button')[2];
+
+
+      bt.addEventListener("mouseenter", function(e){
+        var parentOffset = $(this).offset();
+        var xPosition = e.pageX - parentOffset.left;
+        var yPosition = e.pageY - parentOffset.top;
+
+        $(this).find('span').css({
+          'top': yPosition,
+          'left': xPosition-10,
+          'width': '1000px',
+          'height': '1000px'
+        });
+
+        
+      }, false);
+      bt.addEventListener("mouseleave", function(e){
+        var parentOffset2 = $(this).offset();
+        var xPos = e.clientX - parentOffset2.left;
+        var yPos = e.clientY - parentOffset2.top;
+
+        $(this).find('span').css({
+          'left': xPos -10,
+          'top': yPos,
+          'width': '0px',
+          'height': '0px'
+
+        });
+      }, false);
+
+      bt2.addEventListener("mouseenter", function(e){
+        var parentOffset2 = $(this).offset();
+        var xPos = e.clientX - parentOffset2.left;
+        var yPos = e.clientY - parentOffset2.top;
+
+        $(this).find('span').css({
+          'left': xPos -10,
+          'top': yPos,
+          'width': '2000px',
+          'height': '2000px'
+
+        });
+      }, false);
+
+      bt2.addEventListener("mouseleave", function(e){
+        var parentOffset2 = $(this).offset();
+        var xPos = e.clientX - parentOffset2.left;
+        var yPos = e.clientY - parentOffset2.top;
+
+        $(this).find('span').css({
+          'left': xPos -10,
+          'top': yPos,
+          'width': '0px',
+          'height': '0px'
+
+        });
+      }, false);
+
+      
+
+
+        document.getElementsByTagName('button')[3].addEventListener("mouseenter", function(e) {
+          var parentOffset3 = $(this).offset();
+          var xPos = e.clientX - parentOffset3.left;
+          var yPos = e.clientY - parentOffset3.top;
+
+          $(this).find('span').css({
+            'top': yPos,
+            'left': xPos,
+            'width': '2000px',
+            'height': '2000px',
+            'background': '#333'
+          });
+        },false);
+      
+      $(document).ready( function() {
+        
+        $('#a').click(function() {
+          $('.reg').fadeIn(1000);
+          $('.over').fadeIn(1000);
+        });
+         $('#b').click(function() {
+          $('.log').fadeIn(1000);
+          $('.over').fadeIn(1000);
+        });
+         $('.over').click( function() {
+          $('.over').fadeOut();
+          $('.log').fadeOut();
+          $('.reg').fadeOut();
+         });
+      });
+
+
+</script>     
+    
